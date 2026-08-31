@@ -9,6 +9,7 @@ import 'package:flutter_application_1/module_8/class_1_input_output.dart';
 import 'package:flutter_application_1/module_8/class_2.dart';
 import 'package:flutter_application_1/module_8/class_3.dart';
 import 'package:flutter_application_1/module_8/class_3_greed_v.dart';
+import 'package:flutter_application_1/module_9/class2list.dart';
 import 'package:flutter_application_1/module_9/them_test.dart';
 
 class MyApp extends StatelessWidget{
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget{
           
          focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(20),
-              borderSide: BorderSide(color: Colors.deepOrangeAccent,width: 2),
+              borderSide: BorderSide(color: const Color.fromARGB(255, 235, 225, 222),width: 2),
 
             ),
             hintStyle: TextStyle(
@@ -84,11 +85,11 @@ class MyApp extends StatelessWidget{
       ),   */
 
      // darkTheme: ThemeData.dark(),
-     themeMode: ThemeMode.light,
+     //themeMode: ThemeMode.light,
       title: 'sunny',
       home: const ThemTest(),
        // ThemTest(),
-      initialRoute: 'login',
+      initialRoute: 'list',
       //GridV(),
      // GridV(),
       //LoginPage(),
@@ -101,7 +102,7 @@ class MyApp extends StatelessWidget{
         'btns': (context)=>Buttongrp(),
         'login':(context) => LoginPage(),
        'dashboard':(context) => Dashboard(),
-
+        'list':(context) =>Flist(),
        },  
        
     );
