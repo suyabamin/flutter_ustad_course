@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget{
       ),   */
 
      // darkTheme: ThemeData.dark(),
-     themeMode: ThemeMode.system,
+     themeMode: ThemeMode.light,
       title: 'sunny',
       home:ThemTest(),
       
