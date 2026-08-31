@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "F:/test_flutter/flutter_application_1/linux"
+    "cmake.sourceDirectory": "${workspaceFolder}/linux",
+    "dart.flutterHotReloadOnSave": "all",
+    "dart.hotReloadProgress": "statusBar",
+    "debug.toolBarLocation": "floating"
 }

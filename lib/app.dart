@@ -1,6 +1,9 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/module_7/class_2_button.dart';
+import 'package:flutter_application_1/module_8/Dshboard.dart';
 
 import 'package:flutter_application_1/module_8/class_1_input_output.dart';
 import 'package:flutter_application_1/module_8/class_2.dart';
@@ -62,11 +65,11 @@ class MyApp extends StatelessWidget{
 
        ),
        darkTheme: ThemeData.dark().copyWith(
-        primaryColor: Colors.purple,
+        primaryColor: const Color.fromARGB(255, 38, 202, 16),
         elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
             
-            backgroundColor: Colors.purpleAccent,
+            backgroundColor: const Color.fromARGB(255, 241, 135, 14),
             foregroundColor: Colors.white,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(10)
@@ -83,17 +86,24 @@ class MyApp extends StatelessWidget{
      // darkTheme: ThemeData.dark(),
      themeMode: ThemeMode.light,
       title: 'sunny',
-      home:ThemTest(),
-      
+      home: const ThemTest(),
+       // ThemTest(),
+      initialRoute: 'login',
       //GridV(),
      // GridV(),
-     // LoginPage(),
+      //LoginPage(),
       //Flutterinput(),
       //Buttongrp(),
       
    ///Home() ,
+       routes: {
+        'home':(context) => Home(),
+        'btns': (context)=>Buttongrp(),
+        'login':(context) => LoginPage(),
+       'dashboard':(context) => Dashboard(),
 
-
+       },  
+       
     );
   }
 }

@@ -107,15 +107,40 @@ class LoginPage extends StatelessWidget {
                       }
                 }, child: Text('submit'),),
                  ),
+
+
+                      
+
                  SizedBox(height: 10,),
+
+                //route
+                   // nevigator name parameter
+
+                     ElevatedButton(onPressed: () {
+                       Navigator.pushNamed(context,'btns');
+                     },child: Text('BTNS')),
+
+                     ElevatedButton(onPressed: () {
+                       Navigator.pushReplacementNamed(context,'home');
+                     },child: Text('home')),
+
+
+                 
+                 ElevatedButton(onPressed:(){
+                  Navigator.pushNamed(context, 'dashboard',arguments: {
+                    'phone':phoneController.text,
+                    'name':'sunny'
+                  });
+                 } , child: Text('Dashboard')),
+
                ElevatedButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Home2()));
                }, child: Text('home-2')) , 
             
-           ElevatedButton(onPressed: (){
+        /*   ElevatedButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Dashboard(phone: phoneController.text,)));
                }, child: Text('Dashboard')) 
-           
+           */
             ],
            ),
          ),

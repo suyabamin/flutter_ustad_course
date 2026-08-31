@@ -11,30 +11,24 @@ class GridV extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       body:  GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           crossAxisSpacing: 25,
-          mainAxisSpacing: 25
+          mainAxisSpacing: 25,
           ), 
           itemCount: 20,
         itemBuilder: (context,index){
-               
-                  
-
-                  Container(
-            width: 150,
-            height: 150,
-           
+          return Container(
             decoration: BoxDecoration(
               // color: Colors.teal,
-              gradient: LinearGradient(
+              gradient: const LinearGradient(
                 
                 colors: [Colors.red,Colors.red],
                 begin: Alignment.center,
                 end: Alignment.bottomRight,
                 ),
                borderRadius: BorderRadius.circular(10),
-               boxShadow: [
+               boxShadow: const [
                 BoxShadow(
                   color: Colors.black,
                   blurRadius: 8,
@@ -52,7 +46,7 @@ class GridV extends StatelessWidget {
                ],
             ),
           
-              child:Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.phone,size: 50,color:Colors.white,),
@@ -65,9 +59,6 @@ class GridV extends StatelessWidget {
                 ],
               ),
           );
-            
-
-
         }
         ),
     
