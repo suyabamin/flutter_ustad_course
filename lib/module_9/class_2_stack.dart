@@ -13,63 +13,6 @@ class class2Stack extends StatelessWidget{
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-
-         
-         Stack(
-          children: [
-            Container(
-              height: 350,
-              width: 300,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                image: DecorationImage(
-                  image: NetworkImage('https://scontent.fdac189-1.fna.fbcdn.net/v/t39.30808-6/470137334_1049969566902938_5254309413211581147_n.jpg?stp=dst-jpg_tt6&cstp=mx1352x640&ctp=s1352x640&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGS_FqSHY47ViludUjWXFp82dmPjKMUvXjZ2Y-MoxS9eLpIa5bd3PNH9dn8X8Wi1eJxjOdxKTWm4WGmbuQ5d8CZ&_nc_ohc=VkDqeKnUOXsQ7kNvwG-IbEr&_nc_oc=AdrYAIUK0afw98pN_hw_X5VRVhx-ViGgTk2hArFe1A9QtZlhLVoAAVFz_qND-1HVDs4&_nc_zt=23&_nc_ht=scontent.fdac189-1.fna&_nc_gid=gzJurxpa5Q2KFA8_LjCMUg&_nc_ss=7b2a8&oh=00_AQLzkPG-pOb9q4oSjQzDiqvA09kPh2HJ_hwDHaFYPgRejA&oe=6A9C9A30')
-                )
-              ),
-            ),
-            Container(
-         alignment: Alignment.bottomCenter,
-                padding: EdgeInsets.all(8),
-        decoration:BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [Colors.transparent, Colors.black54],
-              )
-        ),
-       ),
-        Positioned( 
-          bottom: 20,
-          left: 50,
-          right: 10,
-        child:  Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text('bangladesh'),
-
-            Text('⭐ 5.0 ',
-            style: TextStyle(
-              color: Colors.white
-            ),
-            )
-
-
-            /*  ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                   backgroundColor: Colors.blueAccent,
-                   foregroundColor:Colors.orange,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadiusDirectional.circular(10)
-                  ),
-                  padding: EdgeInsets.all(10)
-                ),
-                onPressed: (){}, child: Text('5.0'))   */
-            ],
-          )
-        )
-          ],
-         ),
              
               
        
@@ -134,3 +77,4 @@ class class2Stack extends StatelessWidget{
     );
   }
 }
+
