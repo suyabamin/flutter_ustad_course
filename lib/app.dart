@@ -10,6 +10,7 @@ import 'package:flutter_application_1/module_8/class_2.dart';
 import 'package:flutter_application_1/module_8/class_3.dart';
 import 'package:flutter_application_1/module_8/class_3_greed_v.dart';
 import 'package:flutter_application_1/module_9/class2list.dart';
+import 'package:flutter_application_1/module_9/class_2_stack.dart';
 import 'package:flutter_application_1/module_9/them_test.dart';
 
 class MyApp extends StatelessWidget{
@@ -89,7 +90,7 @@ class MyApp extends StatelessWidget{
       title: 'sunny',
       home: const ThemTest(),
        // ThemTest(),
-      initialRoute: 'list',
+      initialRoute: 'Stack',
       //GridV(),
      // GridV(),
       //LoginPage(),
@@ -102,7 +103,7 @@ class MyApp extends StatelessWidget{
         'btns': (context)=>Buttongrp(),
         'login':(context) => LoginPage(),
        'dashboard':(context) => Dashboard(),
-        'list':(context) =>Flist(),
+        'Stack':(context) =>class2Stack(),
        },  
        
     );
