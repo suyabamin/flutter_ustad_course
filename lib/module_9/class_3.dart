@@ -39,8 +39,11 @@ class OwnWiget extends StatelessWidget {
           
           
               ElevatedButton(
-                onPressed: () {},
-                child: Text('next class'),
+                onPressed: () {
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=>class2Stack()));
+                },
+                child: Hero(tag: 'prevous class', child: Text('prevous class'),
+                )
               ),
 
           ],

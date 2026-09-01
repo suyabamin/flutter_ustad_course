@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/home.dart';
+import 'package:flutter_application_1/module11/res.dart';
 import 'package:flutter_application_1/module_7/class_2_button.dart';
 import 'package:flutter_application_1/module_8/Dshboard.dart';
 
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget{
        theme: ThemeData(
         primaryColor: Colors.deepOrange,
         primarySwatch: Colors.teal,
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
         //scaffoldBackgroundColor: Colors.grey.shade500 ,
         elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -87,11 +88,11 @@ class MyApp extends StatelessWidget{
       ),   */
 
      // darkTheme: ThemeData.dark(),
-     //themeMode: ThemeMode.light,
+     themeMode: ThemeMode.light,
       title: 'sunny',
       home: const ThemTest(),
        // ThemTest(),
-      initialRoute: 'OwnWiget',
+      initialRoute: 'res',
       //GridV(),
      // GridV(),
       //LoginPage(),
@@ -106,6 +107,7 @@ class MyApp extends StatelessWidget{
        'dashboard':(context) => Dashboard(),
         'Stack':(context) =>class2Stack(),
         'OwnWiget':(context) => OwnWiget(),
+        'res':(context) => Res(),
        },  
        
     );
