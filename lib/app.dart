@@ -1,11 +1,11 @@
-
-
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/module11/class_2.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_application_1/home.dart';
 import 'package:flutter_application_1/module11/res.dart';
 import 'package:flutter_application_1/module_7/class_2_button.dart';
 import 'package:flutter_application_1/module_8/Dshboard.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_application_1/module_8/class_1_input_output.dart';
 import 'package:flutter_application_1/module_8/class_2.dart';
 import 'package:flutter_application_1/module_8/class_3.dart';
@@ -19,6 +19,15 @@ class MyApp extends StatelessWidget{
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+
+return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      // Use builder only if you need to use library outside ScreenUtilInit context
+      builder: (_ , child) {
+
+
     return MaterialApp(
 
        debugShowCheckedModeBanner: false,
@@ -92,7 +101,7 @@ class MyApp extends StatelessWidget{
       title: 'sunny',
       home: const ThemTest(),
        // ThemTest(),
-      initialRoute: 'res',
+      initialRoute: 'res_pakg',
       //GridV(),
      // GridV(),
       //LoginPage(),
@@ -108,8 +117,11 @@ class MyApp extends StatelessWidget{
         'Stack':(context) =>class2Stack(),
         'OwnWiget':(context) => OwnWiget(),
         'res':(context) => Res(),
+        'res_pakg':(context) => ResPKG(),
        },  
        
     );
+  
+      });
   }
 }
