@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/module11/class_2.dart';
+import 'package:flutter_application_1/module11/class_3.dart';
+import 'package:flutter_application_1/module11/todo.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_application_1/home.dart';
 import 'package:flutter_application_1/module11/res.dart';
@@ -101,7 +103,7 @@ return ScreenUtilInit(
       title: 'sunny',
       home: const ThemTest(),
        // ThemTest(),
-      initialRoute: 'res_pakg',
+      initialRoute: 'todo',
       //GridV(),
      // GridV(),
       //LoginPage(),
@@ -118,6 +120,8 @@ return ScreenUtilInit(
         'OwnWiget':(context) => OwnWiget(),
         'res':(context) => Res(),
         'res_pakg':(context) => ResPKG(),
+        'class3':(context) => Class3(),
+        'todo':(context) => todo(),
        },  
        
     );

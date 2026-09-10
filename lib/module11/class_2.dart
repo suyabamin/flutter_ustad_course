@@ -96,6 +96,8 @@ class ResPKG extends StatelessWidget {
       ),
       body: Center(
         child: SingleChildScrollView(
+          scrollDirection:
+              orientation == Orientation.landscape ? Axis.horizontal : Axis.vertical,
           child: content,
         ),
       ),
