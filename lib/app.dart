@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/module11/class_2.dart';
 import 'package:flutter_application_1/module11/class_3.dart';
 import 'package:flutter_application_1/module11/todo.dart';
+import 'package:flutter_application_1/module12/calculator.dart';
 import 'package:flutter_application_1/module12/class_1__.dart';
+import 'package:flutter_application_1/module12/class_2__.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_application_1/home.dart';
 import 'package:flutter_application_1/module11/res.dart';
@@ -101,7 +103,7 @@ class MyApp extends StatelessWidget {
           title: 'sunny',
 
          
-          initialRoute: 'stclass',
+          initialRoute: 'Calculator',
 
           routes: {
             'home': (context) => Home(),
@@ -125,6 +127,8 @@ class MyApp extends StatelessWidget {
             'todo': (context) => todo(),
 
             'stclass': (context) =>stclass(),
+            'LifeCycle':(context) => LifeCycle(),
+            'Calculator':(context) => Calculator(),
           },
         );
       },
